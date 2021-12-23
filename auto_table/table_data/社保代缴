@@ -1,0 +1,18 @@
+公司类型	company_type,
+代缴类型	pay_type,
+公司编码	unitcode,
+单据编号	bill_code,
+申请人	u_username,
+申请日期	ts,
+申请公司	company_name,
+业务类型	work_type	1	1:代缴申请.2:停止代缴,
+代缴类型	pay_type	1	1:社保代缴.2:公积金代缴,
+代缴或停止原因	reason_text,
+代缴或停止起始月份	month,
+备注	note	5,
+详情	tableData,"人员姓名	psnname
+人员编码	psncode
+户籍所在地	area
+原代缴单位	old_company_name
+社保/公积金代缴单位	now_company_name
+档案附件	psn_archives_url	3"

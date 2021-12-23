@@ -1,0 +1,54 @@
+单据编码	bill_code,
+单据名称	bill_name,
+提交日期	ts,
+制单人	u_username,
+公司	company_name,
+人员	out_user_name,
+部门	deptname,
+岗位	jobname,
+单据类型	type	1	pay:缴纳.back:返还,
+预计离职时间	plan_leave_date,
+账号现有金额	money,
+是否为首次培训	first	1	1:是.0:否,
+是否离职	is_quit	1	1:是.0:否,
+备注	memo,
+详情	detail_pay,"缴费类型	type
+外出培训单号	out_bill_code
+培训开始时间	start_date
+培训结束时间	end_date
+培训内容	content
+地点	address
+交通方式	traffic_way
+报销金额	apply_money
+本次费用总额	this_total_money
+缴纳比例	payment_per
+应缴纳金额	payment_money
+实缴纳金额	actual_payment
+未缴纳金额	no_payment
+本次缴纳金额	current_payment
+培训协议开始时间	deal_start_date
+培训协议结束时间	deal_end_date"
+详情	detail_back,"外出培训单号	out_bill_code
+培训协议开始日期	deal_start_date
+培训协议结束日期	deal_end_date
+培训内容	content
+地点	address
+报销金额	apply_money
+本次费用总额	this_total_money
+缴纳比例	payment_per
+实缴纳金额	actual_payment
+应缴纳金额	payment_money
+第一次缴纳金额	first_pay_num
+第一次缴纳时间	first_pay_time
+第二次缴纳金额	second_pay_num
+第二次缴纳时间	second_pay_time
+第三次缴纳金额	third_pay_num
+第三次缴纳时间	third_pay_time
+未缴纳金额	no_payment
+应返还金额	should_return_num
+是否满足返还条件	is_meet_conditions	1	1:是.0:否
+实际返还金额	actual_return_money
+未返还金额	not_return_num
+返还日期	return_time
+实际返还日期	actual_return_time
+违约扣款	default_payment"

@@ -1,0 +1,22 @@
+公司类型	company_type,
+员工类型	iscore,
+岗位	jobcode,
+单据编号	bill_code,
+离职类型	defdoc_text,
+离职原因	reason_text,
+单据提报时间	applydate,
+离职提出时间	submitdate,
+总经理批准最后离职时间	lastworkdate,
+申请人	u_username,
+离职公司	company_name,
+离职说明	vexplain	5,
+详情	detail,"人员编码	psncode
+人员姓名	psnname
+离职前部门	currdept_id_name
+离职前人员类别	pk_currpsncl_name
+离职前岗位	currom_job_id_name
+离职前岗位等级	currjobrank_name
+离职前专业等级	curr_professional_name
+是否转正	regular_text
+进入集团时间	joinsysdate
+档案附件	path	3"

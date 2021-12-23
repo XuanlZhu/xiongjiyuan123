@@ -1,0 +1,4 @@
+单据编号	bill_code	1	key1:val1.key2:val2	默认值,
+单据名称	bill_name	2	url|tag|valve|child|key1:val1.key2:val2	默认值,
+
+字段类型   1：自定义下拉框  2：自定义接口   3：tab页签   4：附件  5:多行文本

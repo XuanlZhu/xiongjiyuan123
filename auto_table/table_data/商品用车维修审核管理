@@ -1,0 +1,15 @@
+申请公司	entityName,
+申请时间	applyDate,
+申请人	auditor,
+工单号	roNo,
+业务类型	businessDesc,
+汽车品牌	brandName,
+VIN	vin,
+车系	seriesName,
+材料成本金额	partCostAmount,
+工单金额	repairAmount,
+原因说明	remark,
+材料明细	partList,"配件代码	partNo
+配件名称	partName
+配件数量	partQuantity
+金额	partSalesPrice"

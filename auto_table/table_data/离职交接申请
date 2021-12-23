@@ -1,0 +1,25 @@
+公司类型	company_type,
+公司编码	unitcode,
+岗位	jobcode,
+工龄	work_age,
+岗位等级	jobrank,
+是否锁定黑名单(集团除名)	is_lock_text,
+单据编号	bill_code,
+离职类型	defdoc_text,
+离职原因	reason_text,
+生效日期	effectdate,
+申请日期	applydate,
+申请人	u_username,
+离职公司	company_name,
+离职说明	vexplain	5,
+是否加入黑名单	isblack	1	1:是.0:否,
+加入黑名单原因	blackvexplain	5,
+详情	detail,"人员编码	psncode
+人员姓名	psnname
+离职前所在部门	currdept_id_name
+离职前人员类别	pk_currpsncl_name
+离职后人员类别	pk_newpsncl_name
+离职前岗位	currom_job_id_name
+离职前岗位等级	currjobrank_name
+进入集团时间	joinsysdate
+档案附件	path	3"

@@ -1,0 +1,27 @@
+单据编号	bill_code,
+单据名称	bill_name,
+申请公司	company_name,
+申请时间	create_date,
+申请人	u_username,
+申请原因	reason_id	2	dms-hr-basic/bd/custom/formationReason|docname|id||,
+备注	note,
+附件列表	filedata	4,
+编制调整列表	detail,"调整类型	type_text
+部门	dept_name
+岗位	job_name
+岗位占编人数	actual_num
+岗位编制数	workout
+人均薪资预算	salary_budget
+岗位临时编制数	tmp_num
+部门占编人数	dep_actualnum
+部门编制数	dep_workout
+部门临时编制数	dep_tmp_num
+部门薪资预算	dep_salary_budget
+增加岗位编制数	add_workout
+减少岗位编制数	reduce_workout
+增加岗位临时编制数	add_tmp_num
+增加有效期至	add_validdate
+减少岗位临时编制数	reduce_tmp_num
+减少有效期至	reduce_validdate
+增加岗位人均薪资预算	add_salary_budget
+减少岗位人均薪资预算	reduce_salary_budget"

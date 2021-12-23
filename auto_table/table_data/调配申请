@@ -1,0 +1,34 @@
+公司类型	company_type,
+公司编码	unitcode,
+调配后岗位	new_jobcode,
+调配类型	defdoc_id,
+调配前后是否同一事业部	is_same_carbigbrand,
+单据编号	bill_code,
+调配类型	type,
+调配原因	reason_text,
+生效日期	effectdate,
+申请日期	applydate,
+申请人	u_username,
+目标公司	new_company_name,
+原公司	old_company_name,
+编制类型	wktype	1	1:正式编制.2:临时编制,
+培训管理金是否转调	train_modulation	1	1:是.0:否,
+培训管理金个人账户金额(元)	train_money,
+是否试用	istrial	1	1:是.0:否,
+试用期限(月)	trialmonth,
+试用开始日期	trial_start_date,
+试用结束日期	trial_end_date,
+调配说明	vexplain	5,
+是否同步工作履历	synchronous_work_history	1	1:是.0:否,
+详情	detail,"人员编码	psncode
+人员姓名	psnname
+原部门	currdept_id_name
+新部门	newdept_id_name
+原人员类别	pk_currpsncl_name
+新人员类别	pk_newpsncl_name
+原岗位	currom_job_id_name
+新岗位	newom_job_id_name
+原岗位等级	currjobrank_name
+新岗位等级	newjobrank_name
+离职时间	leavedate
+档案管理	archives_url	3"

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='./vue.js'></script>
+</head>
+<body>
+<div id="app">
+    <h2>{{message}}</h2>
+    <cpn1 :cmessage="message"></cpn1>
+</div>
+
+<template id="cpn1">
+    <div>
+        <p>组件1</p>
+        <p></p>
+        <p>{{cmessage}}</p>
+        <cpn2 :mov="mov"></cpn2>
+    </div>
+</template>
+
+<template id="cpn2">
+    <div>
+        <p>组件2</p>
+        <p>{{mov}}</p>
+    </div>
+</template>
+
+<script>
+    // Vue.component('cpn2', {
+    //     template: '#cpn1'
+    // })
+    let app = new Vue({ 
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        },
+        //组件1
+        components: {
+            cpn1:{
+                props: ['cmessage'],
+                template:'#cpn1',
+                data(){
+                    return {
+                        mov:'海尔兄弟',
+
+                    }
+                },
+                //组件2
+                components:{
+                    cpn2:{
+                        props: ['mov'],
+                        template:'#cpn2'
+                    }
+                }
+            }
+        }
+    })
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='./vue.js'></script>
+</head>
+<body>
+    <img src="H:\img\神曲1.png">
+    <div id="app">
+          <li v-for="i in data">{{i}}</li>
+
+    </div>
+    <runoob></runoob>
+    <script>
+    // 注册
+    Vue.component('runoob', {
+      template: '<h1>自定义组件!</h1>'
+    })
+    // 创建根实例
+    new Vue({
+      el: '#app',
+      data:{
+        data:[1,2,3]
+      }
+    })
+    </script>
+    <style>
+      img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    </style>
+
+
+
+</body>
+</html>

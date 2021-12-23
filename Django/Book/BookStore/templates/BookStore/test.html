@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h1>City Gallery</h1></div>
+        <ul id="a_left">
+            <li id = "li_001" onmouseover="this.style.background = 'red'" onmouseout="this.style.background = '#eeeeee'"><h2>London</h2></li>
+            <li id = "li_001" onmouseover="li_over(this)"><h2>Paris</h2></li>
+            <li onclick="window.print()"><h2>Tokyo</h2></li>
+        </ul>
+        <div id="a_right"></div>
+        <div id="footer"></div>
+    </div>
+    <div id="post_001">
+
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        min-width: 950px;
+        min-height: 550px;
+    }
+    #header{
+        height: 10%;
+        width: 100%;
+        background-color: black;
+        float: left;
+    }
+    #header h1{
+        color: white;
+        text-align:center;
+    }
+    
+    #a_left{
+        height: 85%;
+        width: 5%;
+        background-color: #eeeeee;
+        float: left;
+    }
+    #a_right{
+        height: 85%;
+        width: 95%;
+        float: left;
+    }
+    #footer{
+        height: 5%;
+        width: 100%;
+        background-color: black;
+        clear: both;
+    }
+    #post_001{
+        width: 500px;
+        height: 400px;
+        background-color: blanchedalmond;
+    }
+</style>
+<script>
+    function li_over(id) {
+        id.style.background = 'red';
+    }
+    document.getElementsByTagName("li").addEventListener("mouseout",li_over);
+</script>

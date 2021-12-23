@@ -1,0 +1,15 @@
+import base64
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP, PKCS1_v1_5
+from urllib import parse
+
+private_key = RSA.import_key(b"-----BEGIN RSA PRIVATE KEY-----MIICWwIBAAKBgQCYMHioMK+JS/KFo0DBAhgfYMSkP5O+x/KsRllweILW6K20IGvy2zOlXkrhyN5FCa4kzggl4CxQTi6x8OsKe5KQtoht3Izap5la0o6Uk7ELy+SK2XmotDNVdDhRogFSMDMEWQuqvKpipueO8G97DJYj4dOmpLRHaKpYbjOhLCeMWQIDAQABAoGATeQQ/NPeI4DxYSBK1f3CZtzaB85aSbyAIVfoEr47CM8RiC1H0oYKCssVvDVYPTFVJZUlam0vgPJix8OsKDNSsV8qA2JSe7ZSlgvriQS67ohidsnOxHTN9lGCUwOKLD/6lcioBaItCOKf8bA9Po45a0LwonR2DKtdQ//pOKwlbTkCQQDY2DXg6Y1vA/XSJZt59nBSDWxs6llI9H6pWZx12ywEx3fnZDRndZ+KXwb2Pb8aVTq5y/MvA9p+jkPzqykCP4O3AkEAs6uHP6hDJ9YRMij6MpCHZKVJaBshakfWI98865JEzd+LgNvoncC+iOOoUj9rmSui1JCcyJ32TIkK3krL7K4QbwJAWFVTNWjOpZ+eXtnVCQzb2oD/Xyrj7jUy97e6ZcQ/nT7IWGlYc6DVud9WDa8/jvGTN6aeTNOsCQvZIITj8rd+5wJBAKsiC0334BdWj8R+QWnePggAY34UsWxBBlfer3EWPhD2BzNywwtXZmSOq2nD3KHlbVAYei2gP9RAiCiZh8llNmMCPyYZ9mFLl/XZIORIdDvuuWFTvmZFi2OX15PtpEE84GMlTBsVgxWBTgB0ZpcGB6spTtp7xnAXAYCOlToMtdR5rw==-----END RSA PRIVATE KEY-----")
+
+data = "SG3PprDUpc/exLOTuJLrKy4oe0XEji9fT3nP08mfWdS+K7tHSoRQQmY3Hh+/lI1QucED3oXf1yQuwlH/91Nwy23GxYusOYULT2dfwNIm4C1Kjm/yQpO0bZm3aaEDbBAd5tXSgOar/uG3elPDmGJwcN3WPBHJVPkQTkvS4zP6Vpo="
+data = parse.unquote(data)
+data = base64.b64decode(data)
+
+cipher_rsa = PKCS1_v1_5.new(private_key)
+sentinel = None
+ret = cipher_rsa.decrypt(data,sentinel)
+print(ret)

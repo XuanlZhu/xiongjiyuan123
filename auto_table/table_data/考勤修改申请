@@ -1,0 +1,25 @@
+公司类型	company_type,
+单据编码	bill_code,
+申请人	create_by,
+申请公司	company_name,
+月份	ym,
+详情	detail,"人员编码	psncode
+人员姓名	psnname
+一级部门	first_deptname
+部门	deptname
+岗位名称	jobname
+进入公司日期	indutydate
+离职日期	outdutydate
+归属范围	psnclassname
+是否考勤终止	is_termination
+考勤终止日期	termination_date
+事假（修改前）	sj_times_old
+事假（修改后）	sj_times
+病假（修改前）	bj_times_old
+病假（修改后）	bj_times
+忘打卡（修改前）	forget_times_old
+忘打卡（修改后）	forget_times
+旷工（修改前）	kg_times_old
+旷工（修改后）	kg_times
+在途（修改前）	zt_times_old
+在途（修改后）	zt_times"

@@ -1,0 +1,6 @@
+离职日期	leavedate
+离职类型	leavetype
+离职单位	company_name
+离职前部门	deptname
+离职原因	reason_text
+离职说明	description

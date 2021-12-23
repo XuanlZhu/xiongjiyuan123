@@ -1,0 +1,9 @@
+人员编码	psncode
+人员姓名	psnname
+离职前部门	currdept_id_name
+离职前人员类别	pk_currpsncl_name
+离职前岗位	currom_job_id_name
+离职前岗位等级	currjobrank_name
+离职前专业等级	curr_professional_name
+是否转正	regular_text
+说明	vsumm

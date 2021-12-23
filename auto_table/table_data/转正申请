@@ -1,0 +1,19 @@
+公司类型	company_type,
+公司编码	unitcode,
+单据编号	bill_code,
+申请人	u_username,
+申请日期	applydate,
+转正日期	positvedate,
+所属公司	company_name,
+编制类型	wktype_text,
+转正说明	vexplain	5,
+详情	detail,"人员编码	psncode
+人员姓名	psnname
+转正前人员类别	pk_currpsncl_name
+转正后人员类别	pk_newpsncl_name
+试用开始日期	probegindate
+试用结束日期	probenddate
+督导人	vinspector
+总结	vsumm
+档案附件	path	3
+弹窗	table"

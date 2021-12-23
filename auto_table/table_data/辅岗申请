@@ -1,0 +1,11 @@
+单据编号	bill_code,
+申请公司	company_name,
+申请人	u_username,
+申请时间	ts,
+备注	remark,
+详情	detail,"人员编号	psncode
+人员姓名	psnname
+身份证号	id_card
+主岗公司名称	unitname
+主岗部门名称	deptname
+主岗岗位名称	jobname"

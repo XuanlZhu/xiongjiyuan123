@@ -1,0 +1,23 @@
+-
+  name: 什么接口
+  request:
+    url: http://127.0.0.1:8000/get_movies
+    method: get
+    headers:
+      Content-Type: application/json
+    params:
+    data:
+  validate:
+    - eq: {code: 200,id: 1}
+
+-
+  name: 什么接口
+  request:
+    url: http://127.0.0.1:8000/get_movies
+    method: get
+    headers:
+      Content-Type: application/json
+    params:
+    data:
+  validate:
+    eq: {"body[0]['id']": 1,"body[0]['name']": "Severance"}

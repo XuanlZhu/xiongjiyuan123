@@ -1,0 +1,25 @@
+公司类型	company_type,
+公司编码	unitcode,
+岗位编码	jobcode,
+年龄	age,
+单据编号	bill_code,
+单据名称	bill_name,
+申请公司	company_name,
+申请时间	ts,
+申请人	u_username,
+编制类型	wktype_text,
+备注	note	5,
+附件	attach	4,
+详情	detail,"计划报到日期	check_in_date
+录用日期	employ_date
+录用部门	dept_text
+录用岗位	position_text
+应聘人员	username
+人员类别	u_type_text
+工资数额	payment
+是否行业精英	is_elite_text
+是否试用	is_on_trial_text
+试用期限/月	trial_time
+试用开始日期	start_date
+试用结束日期	end_date
+试用期工资	trial_salary"
